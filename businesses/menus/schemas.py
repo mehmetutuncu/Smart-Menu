@@ -17,7 +17,6 @@ class MenuItemCreateSchema(BaseModel):
 
 
 class MenuItemSchema(BaseModel):
-
     id: int
     food_product: FoodResponseSchema
     price: float

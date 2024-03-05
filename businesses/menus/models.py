@@ -18,8 +18,3 @@ class MenuItem(Base):
     id = Column(Integer, primary_key=True, nullable=False)
     food_product_id = Column(Integer, ForeignKey("food_products.id"), index=True)
     price = Column(Double, nullable=False)
-
-
-
-# Karışık Mix Pizza Mozzeralla Peyniri, Sucuk, Mantar, Zeytin, Domates Sos 30-40dk
-# Köri Soslu Tavuk Tavuk, Arpacık Soğan, Krema, Zeytinyağı, Kırmızı Toz Biber, Kekik, Karabiber, Köri, Tuz, Parmesan Peyniri 25-30dk

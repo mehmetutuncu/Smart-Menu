@@ -7,5 +7,3 @@ class TableSchema(BaseModel):
     name: str = Field(default='', description='Descriptive name.')
     is_reserved: bool = Field(default=False, description='Reservation status.')
     capacity: int = Field(default=4, description='Capacity of the table', gt=1, lt=7)
-
-

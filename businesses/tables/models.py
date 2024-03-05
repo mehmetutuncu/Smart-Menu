@@ -11,4 +11,3 @@ class Table(Base):
     name = Column(String(100), nullable=False)
     is_reserved = Column(Boolean, default=False)
     capacity = Column(Integer, default=4)
-

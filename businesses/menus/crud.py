@@ -17,11 +17,9 @@ def read_foods(db: Session):
 
 
 def read_menu_items(db: Session):
-    instances = db.query(MenuItem, FoodProduct).join(target=FoodProduct, onclause=MenuItem.food_product_id == FoodProduct.id).all()
-    responses = []
+    instances = db.query(MenuItem, FoodProduct).join(target=FoodProduct,
+                                                     onclause=MenuItem.food_product_id == FoodProduct.id).all()
     return [{**menuitem.__dict__, 'food_product': foodproduct.__dict__} for menuitem, foodproduct in instances]
-
-
 
 
 def create_menu_item(db: Session, menu_item: MenuItemCreateSchema):

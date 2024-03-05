@@ -39,5 +39,3 @@ def update_table(db: Session, instance_id: int, table: TableSchema):
     db.commit()
     db.refresh(instance)
     return instance
-
-
