@@ -12,7 +12,7 @@ class FoodResponseSchema(FoodSchema):
 
 
 class MenuItemCreateSchema(BaseModel):
-    food_product: int
+    food_product_id: int
     price: float
 
 
